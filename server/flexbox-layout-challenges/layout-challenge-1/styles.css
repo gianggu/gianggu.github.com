@@ -1,0 +1,130 @@
+body {
+    font-family: 'Bitter', serif;
+    color:#434343;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+    border-top: 5px solid cornflowerblue;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/************ Typography rules ************/
+
+h1, h2, nav ul li a {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+}
+
+h1, h2 {
+    color: #153c85;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5em;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color:cornflowerblue;
+}
+
+/************ Header rules ************/
+
+header, #page-footer {
+    background-color: cornflowerblue;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/************ Navigation rules ************/
+
+nav {
+    margin-top: 10px;
+}
+
+/* What do you need to add to make the
+navigation display in a line and center? */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:chocolate;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 4px;
+}
+
+/************ Section rules ************/
+
+section {
+    padding: 20px;
+    background-color: beige;
+}
+
+/* What do you need to add to get the news
+items to line up in a row, and have a gap of 
+20px between each one? How can you be sure each
+article takes up the same amount of space? */
+
+.news-container {
+    display: flex;
+    gap: 20px;
+}
+
+.news-container article {
+   margin: auto; 
+}
+
+blockquote {
+    margin: 0;
+    padding: 40px;
+    font-size: 2rem;
+    background-color: brown;
+    line-height: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+/* How do you get the image and the div to sit next to each other
+and how to you make them split the space 1/3 and 2/3rds? */
+
+.container {
+    background-color: #e9e3ca;
+    display: flex;
+}
+
+.container img {
+    flex: 1;
+}
+
+.container div {
+    padding: 20px;
+    flex: 2;
+}

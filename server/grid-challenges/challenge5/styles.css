@@ -1,0 +1,91 @@
+body {
+    font-family: Arial;
+    color: #333;
+    padding-top: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2, p {
+    margin: 0 0 20px 0;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    background-color: #ffcd04;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.a {
+    /* grid template for .a grid here! */
+    grid-template-areas:
+    "A B B B B C C"
+    "D B B B B E E"
+    "D B B B B E E"
+    "D B B B B E E"
+    "D F F F F E E";
+}
+
+.b {
+    /* grid template for .b grid here! */
+    grid-template-areas:
+    "A E E F F F F"
+    "D E E B B B B"
+    "D E E B B B B"
+    "D E E B B B B"
+    "D C C B B B B";
+}
+
+.number {
+    font-size: 5vw;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1/1;
+    background-color: #ade0f0;
+    /* assign grid area here */
+    grid-area: A;
+}
+
+.grid img {
+    /* assign grid area here */
+    grid-area: B;
+}
+
+.grid article {
+    padding: 20px;
+    /* assign grid area here */
+    grid-area: E;
+}
+
+.caption {
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 4/1;
+    padding: 0 20px;
+    margin: 0;
+    font-style: italic;
+    /* assign grid area here */
+    grid-area: F;
+}
+
+.a article {
+    background-color: #ade0f0;
+}
+
+.b article {
+    background-color: #e366a6;
+}
+
+.a .caption {
+    background-color: #e366a6; 
+}
+
+.b .caption {
+    background-color: #ade0f0;
+}

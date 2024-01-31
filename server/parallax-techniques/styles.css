@@ -1,0 +1,74 @@
+body {
+	font-family: Arial;
+	color:#333;
+	background: #666;
+	
+}
+
+header {
+	background: #ccc;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 50px;
+	flex: 1;
+	margin: 1em 0 0 0;
+}
+ h2 {
+	flex: 1;
+	margin-bottom: 1.5em;
+ }
+
+section {
+	background: #7ba888;
+	padding: 2em ;
+	font-size: 22px;
+}
+
+article {
+	margin: auto;
+	width: 75%;
+}
+
+
+#parallax-1 {
+	background-image: url("images/plant_6.jpg");
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+
+	#parallax-2 {
+		background-image: url("images/sponge_1.jpg");
+		height: 500px;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+#parallax-2 div {
+	width: 500px;
+	background: rgba(39, 25, 25, 0.5);
+	padding: 15px;
+	font-size: 24px;
+	font-style: oblique;
+	color:#fff;
+	line-height: 1.5em;
+
+}

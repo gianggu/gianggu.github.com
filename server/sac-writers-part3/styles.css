@@ -1,0 +1,377 @@
+/************ Bill's CSS Resets ***************/
+
+p, ul, ol, h1, h2, h3, blockquote {
+	margin: 0;
+	padding: 0;
+}
+nav ul, nav ol {
+	list-style-type: none;
+}
+
+/*************** End Reset ******************/
+
+body {
+	font-family: 'Crimson Text', serif;
+	background: #fff;
+	color: #333;
+	padding-top: 9px;
+	padding-bottom: 30px;
+	font-size: 18px;
+}
+
+/*********** Typography **********/
+
+h1, h2, h3 {
+	font-family: Oswald, sans-serif;
+	margin-bottom: .5em;
+	font-weight: 400;
+}
+
+a {
+  color: #CB2000;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: 1.4em;
+}
+
+p.large-link {
+  font-size: 24px;
+}
+
+/******* Navigation Styles ********/
+
+header nav {
+	border-top: 3px solid #cb2000;
+}
+
+header nav ul {
+	display: flex;
+}
+
+header nav ul li {
+	flex: 1;
+	border-right: 3px solid #cb2000;
+}
+
+header nav ul li:last-of-type {
+	border-right: none;
+}
+
+header nav ul li a {
+	display: block;
+	color: #000;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 28px;
+}
+
+header nav ul li a:hover {
+	color: #cb2000;
+}
+
+/******** Header styles ******/
+
+header {
+	background: url("images/pen-small.png") center bottom no-repeat;
+	height: 230px;
+	position: relative;
+}
+
+header h1 {
+	font-size: 60px;
+	padding-left: 30px;
+	padding-top: 30px;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: #2c3e6d;
+	font-weight: 700;
+}
+
+header h1 span {
+	font-family: 'Crimson Text', serif;
+	display: block;
+	font-size: 40px;
+	text-transform: lowercase;
+	color: #000;
+	font-weight: 400;
+}
+
+header .cta {
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+.cta::before { 
+  content: '\0007B\0000a0';
+}
+
+.cta::after { 
+  content: '\0000a0\0007D';
+}
+
+/******* Top Section Styles *******/
+
+.new-box {
+	margin-top: 30px;
+	background: #eee;
+	padding: 15px;
+}
+
+.new-box h1 {
+	font-size: 28px;
+	color: #2D3E6C;
+	margin-bottom: .8em;
+}
+
+.new-box article {
+	border-left: 6px solid #cb2000;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.new-box h2 {
+  color: #666;
+  font-size: 20px;
+  margin-bottom: .3em;
+}
+
+.new-box p {
+  font-style: italic;
+  color: #333;
+  line-height: 1.2em;
+}
+
+.more {
+  white-space: nowrap;
+}
+
+#top blockquote {
+	font-size: 24px;
+	line-height: 1.4em;
+	padding: 30px;
+	text-indent: -.5em;
+}
+
+blockquote footer { 
+	margin-left: .5em;
+}
+
+/***** Middle Section Styles ******/
+
+#middle {
+	margin: 30px 0;
+}
+
+#middle article {
+	border-top: 3px solid #2D3E6C;
+	margin: 15px;
+	padding: 15px 0;
+}
+
+#middle h2 {
+	font-size: 20px;
+	color: #2D3E6C;
+	text-transform: uppercase;
+}
+
+/****** Footer Styles *******/
+
+.pagefooter {
+	padding: 20px;
+	background-color: #630b00;
+	color: #c9cad1;
+}
+
+.pagefooter h1 {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 32px;
+	color: #c9cad1;
+}
+
+.pagefooter h1 span {
+	font-family: 'Crimson Text', serif;
+	display: block;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+.pagefooter div {
+	display: flex;
+}
+
+/******* Page Footer Nav *******/
+
+.pagefooter div nav ul {
+	margin-left: 20px;
+}
+
+.pagefooter nav ul li {
+	margin-bottom: .5em;
+}
+
+.pagefooter nav ul li a {
+	border: none;
+	color: #c9cad1;
+	font-size: 16px;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+}
+
+/**** Final footer styling ****/
+.pagefooter article {
+	padding-top: 20px;
+}
+
+.pagefooter article span,
+.pagefooter nav h3 {
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+}
+
+.pagefooter .social {
+	display: flex;
+}
+
+.pagefooter article nav ul li a {
+  padding-right: 10px;
+  font-size: 30px;
+}
+
+.pagefooter nav ul li a:hover {
+  color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+	body {
+		padding: 20px;
+	}
+
+	header {
+		background: url('images/pen.png') 100% top no-repeat;
+	}
+
+	header div {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	header h1 {
+		padding-bottom: 35px;
+	}
+
+	header .cta {
+		bottom: 50px;
+	}
+
+	#top {
+		display: flex;
+		flex-flow: row-reverse;
+	}
+
+	.new-box, #top blockquote {
+		flex: 1;
+	}
+
+	#middle {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#middle article {
+		flex: 1;
+	}
+
+	#middle article:last-of-type {
+		flex-basis: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"a a"
+		"b c"
+		"d d";
+		grid-column-gap: 30px;
+	}
+
+	#middle article:last-of-type .large-link {
+		text-align: center;
+	}
+
+	#middle article h2 {
+		grid-area: a;
+	}
+
+	#middle article p:nth-child(2) {
+		grid-area: b;
+	}
+
+	#middle article p:nth-child(3) {
+		grid-area: c;
+	}
+
+	#middle article p:nth-child(4) {
+		grid-area: d;
+	}
+
+	.pagefooter {
+		display: flex;
+	}
+
+	.pagefooter article, 
+	.pagefooter div {
+		flex: 1;
+	}
+
+	.pagefooter article {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#container {
+		width: 960px;
+		margin: auto;
+	}
+
+	header nav ul li {
+		width: 120px;
+		flex: none;
+	}
+
+	header nav ul li:last-of-type {
+		border-right: 3x solid #CB2000;
+	}
+
+	#top blockquote {
+		font-size: 28px;
+	}
+
+	#middle {
+		justify-content: space-between;
+	}
+
+	#middle article:last-of-type {
+		flex-basis: auto;
+		display: block;
+	}
+
+	#middle article {
+		margin: 0;
+		width: 300px;
+		flex: none;
+	}
+
+	#middle article:last-of-type .large-link {
+		text-align: left;
+	}
+}

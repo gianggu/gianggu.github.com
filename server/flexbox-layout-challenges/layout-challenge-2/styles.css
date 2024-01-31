@@ -1,0 +1,210 @@
+/* this makes all elements include the padding and borders in the width */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Source Serif Pro', serif;
+    color:#434343;
+    padding-top: 20px;
+}
+
+nav, header, main, #testimonials, #page-footer {
+    width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/************ Typography rules ************/
+h1, h2, h3 {
+    font-family: 'Inspiration', cursive;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+}
+
+h2 { font-size: 4em; text-align: center; }
+h3 { font-size: 3em; }
+p { line-height: 1.5rem;}
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color:cornflowerblue;
+}
+
+/************ Navigation rules ************/
+nav {
+    padding-left: 300px;
+}
+
+/* How do you get the list items to line
+up in a row and take up an equal amount of space
+for each one, and have a 5px gap between them? */
+
+nav ul {
+    width: 900px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    justify-content:flex-end;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-align: center;
+    color:white;
+    background: #6c0e0e;
+    border-radius: 5px 5px 0 0;
+}
+
+/************ Header rules ************/
+
+/* How do you get the header to have the heading on the left
+and the picture on the right with a 1/4 and 3/4 layout. Also
+the text in the header should be centered vertically */
+header {
+    background-color:brown;
+    display: flex;
+}
+header h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    flex: 3;
+}
+
+/************ Main rules ************/
+
+/* the main element should have three items next to each other
+the aside should take up 1/4 of the space, the section should 
+take up 1/2 the space and the form should take up 1/4 of the space */
+
+main {  
+    display: flex;
+}
+
+aside {
+    border-top: 20px solid #8a1a1a;
+    background: #6c0e0e;
+    color: #fff;
+    padding: 15px;
+    flex: 1;
+}
+
+aside h2, aside h3, #testimonials h2 {
+    color:#fffeea;
+
+}
+
+main section {
+    padding: 20px;
+    border-top: 20px solid #c3c39e;
+    background-color: #fcfcf2;
+    flex: 2;
+    
+}
+
+/* you want the picture next to the article, and
+you also want to make sure it does not get stretched */
+
+main section article {
+    display: flex;
+    gap: 20px;
+}
+
+article img {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/************ Form rules ************/
+main form {
+    border-top: 20px solid #75470b;
+    background: #977446;
+    color: #fff;
+    padding: 15px;
+    flex: 1;
+}
+
+label, input, button {
+    display: block;
+}
+
+label {
+    margin-bottom: .5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 10px;
+    background-color: #8a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #510df1;
+    width: 100%;
+}
+
+/************ Other Sections rules ************/
+
+#testimonials {
+    border-top: 20px solid #c3c39e;
+    background: #8f8f57;
+    padding: 30px;
+}
+
+/* How do you get the blockquotes to line up next to each other
+and take the same amount of space? You might need to add an
+element to the page to do this. */
+
+#quotes {
+    display: flex;
+    gap: 20px;
+}
+
+blockquote {
+    margin: 0;
+    line-height: 1.5em;
+    color: #fff;
+    text-indent: -.5em;
+    flex: 1;
+}
+
+#page-footer {
+    background-color: #60602f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+

@@ -1,0 +1,27 @@
+body {
+    font-family: Arial;
+    color: #333;
+    background-color: #efefef;
+}
+
+#container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+ol {
+    list-style-position: inside;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px 120px 120px;
+    gap: 20px;
+}
+
+ol li {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ecbca7;
+}

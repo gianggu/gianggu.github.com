@@ -1,0 +1,469 @@
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: white;
+}
+
+#front-hero {
+    background-image: url("images/front-hero1.JPG");
+	background-repeat: no-repeat;
+	background-position: center 0px;
+    background-size: cover;
+	background-attachment: fixed;
+	padding-top: 771px;
+}
+
+#sticky-header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+	top: 0;
+	left: 0;
+    background-color: black;
+    z-index: 100;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 30px;
+    line-height: 80px;
+    font-size: 25px;
+}
+
+header h1 a {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.main-nav {
+    flex: 3;
+}
+
+.main-nav ul {
+    display: flex;
+    line-height: 65px;
+    justify-content: flex-end;
+    padding: 0 15px 0 0;
+    gap: 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    font-size: .8rem;
+}
+
+.content-padding {
+    background-color: white;
+    padding: 2em 2em 5em;
+    margin: auto;
+}
+
+#front-white-bg {
+    background-color: white;
+}
+
+footer {
+    margin-top: 10em;
+    padding: 50px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.positioned {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.positioned .top-left{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    margin: 0;
+}
+
+.positioned .bottom-right{
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    margin: 0;
+}
+
+.positioned h2 {
+    /* should i do javascript to have the transparent to color background transition? */
+    background-color: black;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.positioned h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* This is the css for my mobile recipes page */
+
+#inner-recipes {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+#inner-recipes h2 {
+    font-size: 30px;
+    margin: 50px 0 10px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+.blurb {
+    font-size: .9em;
+    padding: 30px;
+}
+
+.recipe-categories {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.recipe-categories img {
+    width: 60%;
+    margin: auto;
+}
+
+.recipe-categories a {
+    padding: 30px 20px;
+    color: black;
+}
+
+.individual-recipes {
+    margin: 20px;
+}
+
+.individual-recipes h2, img {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.individual-recipes img {
+    width: 70%;
+    min-width: 300px;
+}
+
+#inner-moms-meals {
+    padding: 0 50px;
+}
+#inner-moms-meals section {
+    background: white;
+    padding: 30px 0;
+}
+
+#parallax-1 { 
+    background-image: url("images/moms-1.jpg");
+    height: 620px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-2 { 
+    background-image: url("images/moms-2.jpg");
+    height: 620px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-3 { 
+    background-image: url("images/moms-3.jpg");
+    height: 620px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-4 { 
+    background-image: url("images/moms-4.jpg");
+    height: 620px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax-5 { 
+    background-image: url("images/moms-5.jpg");
+    height: 620px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    #front-hero {
+        background-image: url("images/front-hero1.JPG");
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 771px;
+    }
+    
+    #sticky-header {
+        height: 100px;
+    }
+
+    header {
+        /* background-color: #000; */
+        display: flex;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* border-bottom: 2px solid black; */
+        background-color: black;
+        z-index: 100;
+    }
+
+    header h1 {
+        line-height: 110px;
+        font-size: 45px;
+    }
+    
+    .main-nav ul {
+        line-height: 110px;
+        justify-content: flex-end;
+        padding: 0 60px 0 0;
+        gap: 50px;
+        font-size: .9rem;
+    }
+
+    .content-padding {
+        padding: 50px 150px;
+    }
+
+    .positioned h2 {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    
+    .row {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .positioned img {
+        margin: 0;
+    }
+    #first-image {
+        width: 59.55%;
+    }
+    
+    #first-image img {
+        width: 100%;
+        min-width: 400px;
+    }
+    
+    .first-two {
+        display: flex;
+        width: 40.45%;
+        padding: 0;
+    }
+    
+    #first-two article:first-of-type {
+        margin-bottom: 50px;
+    }
+    
+    #third-image {
+        width: 43%;
+    }
+
+    #fourth-image {
+        width: 57%;
+    }
+    
+    .row div {
+        flex: 1;
+    }
+
+    /* This is the css for my recipe page */
+
+    .flex-section {
+        display: flex;
+        padding-top: 80px;
+    }
+    
+    .flex-section aside {
+        flex: 1;
+        padding-top: 80px;
+        padding-right: 15px;
+        border-right: 1px solid black;
+    }
+
+    .flex-section main {
+        flex: 3;
+        padding-right: 4em;
+    }
+
+    .flex-section article {
+        flex: 3;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: contents;
+    }
+
+    .blurb {
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .recipe-grid1 {
+        display: flex;
+    }
+
+    #egg-flex1, #egg-flex2 {
+        flex: 1;
+    }
+
+    .recipe-grid2 {
+        display: flex;
+    }
+
+    #meat-flex1, #meat-flex2 {
+        flex: 1;
+    }
+
+    .recipe-categories {
+        border: none;
+    }
+    
+    .recipe-categories img {
+        width: 100%;
+        padding: 0;
+    }
+  
+    .individual-recipes {
+        margin: 50px;
+    }
+    
+    .individual-recipes h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .individual-recipes img {
+        margin: 0 auto 50px;
+    }
+
+    /* This is the css for my mom's meals */
+
+    #inner-moms-meals {
+        margin-top: 100px;
+        padding: 0;
+    }
+
+    #inner-moms-meals section {
+        background: white;
+        padding: 200px 100px 10px;
+        text-align: center;
+    }
+
+    #inner-moms-meals h2:first-of-type {
+        padding-top: 50px;
+    }
+
+    #inner-moms-meals h2 {
+        font-size: 40px;
+    }
+
+    #parallax-1 { 
+        background-image: url("images/moms-1.jpg");
+        height: 940px; 
+
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #parallax-2 { 
+        background-image: url("images/moms-2.jpg");
+        height: 840px;
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #parallax-3 { 
+        background-image: url("images/moms-3.jpg");
+        height: 840px; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #parallax-4 { 
+        background-image: url("images/moms-4.jpg");
+        height: 840px; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #parallax-5 { 
+        background-image: url("images/moms-5.jpg");
+        height: 840px; 
+
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}

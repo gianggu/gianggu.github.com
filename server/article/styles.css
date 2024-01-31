@@ -1,0 +1,70 @@
+body {
+    background-color:#c4ecf4;
+    font-family: 'Brygada 1918', serif;
+}
+
+article {
+    width: 700px;
+    margin: auto;
+    background-color: #FFF;
+    padding: 3em;
+    border: 10px #b2e4ee;
+}
+
+header {
+   /*background: url()
+    rgba(0,0,0,0.5);*/
+    font-family:serif;
+    background-color:aliceblue;
+    padding: 1em;
+}
+
+h1 {
+    font-size:34px;
+}
+
+#intro {
+    /*border-radius: 10px;*/
+    background-color: rgb(251, 238, 221);
+    padding: 1em;
+    color: rgb(89, 61, 27);
+    margin-bottom: 3em;
+}
+
+.titles {
+
+    font-size: 28px;
+    margin-bottom: 0%;
+    font-family: serif;
+}
+
+.subtitles {
+    font-style: italic;
+    font-style: oblique;
+}
+
+section {
+    margin: 1em 0 2em 0;
+}
+
+.description1 {
+    font-size: x-small;
+    margin-top: .4em;
+    text-align: left;
+}
+
+.description2 {
+    font-size: x-small;
+    margin-top: .4em;
+    text-align: left;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 5px 10px;
+}
+
+.float-left {
+    float: left;
+    margin: 0 10px 5px 0;
+}

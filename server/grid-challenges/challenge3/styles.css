@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    color: #333;
+    background-color: #efefef;
+}
+
+#container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+form {
+    width: 800px;
+    margin: auto;
+    background-color: darkgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+input {
+    display: block;
+    background-color: white;
+    color:crimson;
+    border: none;
+    text-align: center;
+    width:100%;
+    aspect-ratio: 1/1;
+    font-size: 75px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Major+Mono+Display&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    
+<body>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="post5.html">Web Design Research</a></li>
+            <li><a href="post4.html">Learning Web Design</a></li>
+            <li><a href="post3.html">Comparative Analysis</a></li>
+            <li><a href="post2.html">Your Article HTML</a></li>
+            <li><a href="post1.html">History of Internet</a></li>
+        </ul>
+    </nav>
+
+    <header class="inner-header">
+        <h1><a href="index.html">Gia's Blog</a></h1>
+    </header>
+
+    <main>
+        <nav class="inner-nav">
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="post5.html">Next Post</a></li>
+                <li><a href="post3.html">Previous Post</a></li>
+            </ul>
+        </nav>
+
+        <article class="posts">
+            <h1>Learning Web Design</h1>
+            <time datetime="yyyy-mm-dd">November 15, 2023</time>
+
+                <p>While skimming through "Learning Web Design 5th Ed" by Jennifer Niederst Robbins, I noted several cool HTML CSS discoveries. I hope these tips will be useful for yoiu as they were for me!</p>
+
+                <p>For values that apply to elements with spacing such as with "padding" or "margin", there are several ways you can format them to reduce the work. This can be seen as a shorthand. The order of value placement can mean "top, right, left, bottom", "top, right/left, bottom", or "top/bottom, right/left".</p>
+
+                <p>Another way this can be applied is with the border radius. When there two values applies, the first one is used for "top-left" and "bottom-right", and the second is for the other two corners. You can also make your birders more specific such as writing "border-top-radius: 100px 50px; or border-radius: 60px/40px."</p>
+
+                <p>On the topic of borders, you can customize them quite a lot! For example, "border-image" lets you add an image inside the border area. "border-image-repeat" controls the manner in which the image fills the sides of the border. "border-image-source" is the location of the image file to be used for the border image.</p>
+
+                <p>The float property moves an element as far as possible to the left or right, allowing the following content to wrap around it. It can apply to any HTML element, but you must always apply a width for floated text elements and block elements. This is because the width is set to auto for these elements. Thus the content will fill the available width of its containing element. If you want your text to start on its own line after the float element, you have to turn text wrapping off by clearing the element below the float. An example would be:
+                    img {
+                        float: left;
+                        margin-right: .5em;
+                    }
+
+                    h2 {
+                        clear: left;
+                        maargin-top: 2em;
+                    }
+                </p>
+
+                <p>The property I think is most fascinating is the fancy text wrap with CSS shapes. The default for floats is to be blocked in rectangular shapes. However the shape of the wrapped text can be changed to a circle, ellipse, polygon, or any image shape using the shape-outsde property.
+
+                <div class="post-pics">
+                    <img src="images/learning-design.jpg" width="700" height="auto" alt="sample pic">
+                </div>
+                    
+                There are two approaches for text wrapping around a shape. The first is to provide the path coordinates with circle(), ellipse(), or polygon(). Another way is to use url() to specify an image that has transparent areas (such as a GIF or a PNG). You would place the img as normal, abd then in CSS include "shape-outside: url(sundae.png);"</p>
+
+                <p>The image above is my example done by using ellipse() with the "shape-outside" property.</p>
+        </article>
+    </main>
+
+        <footer>
+            <p>Designed by Gianna Nguyen</p>
+            <contact>&#103;&#112;&#110;&#103;&#117;&#121;&#101;&#110;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</contact>
+            <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+        </footer>
+    
+</body>
+</html>

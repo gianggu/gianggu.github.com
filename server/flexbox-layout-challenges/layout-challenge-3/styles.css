@@ -1,0 +1,214 @@
+/* this makes all elements include the padding and borders in the width */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    color:#434343;
+}
+
+.container {
+    width: 1000px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/************ Typography rules ************/
+h1, h2, h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5em;
+    text-transform: capitalize;
+}
+
+h2 { font-size: 2em; text-align: center; }
+h3 { font-size: 1.5em; }
+p { line-height: 1.5rem;}
+
+/************ Header rules ************/
+header {
+    background-color: gold;
+    height: 250px;
+}
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    color: #fff;
+    display: flex;
+}
+
+header .container {
+    background-color: #d8ba12;
+    height: 250px;
+    padding: 0;
+}
+
+header .info {
+    background-color: #fde662;
+    padding: 20px;
+}
+
+header button {
+    background-color: darkblue;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/************ Navigation rules ************/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
+    color:darkblue;
+    border-right: 2px solid darkblue;
+}
+
+nav ul li:nth-child(3) a {
+    border: none;
+}
+
+nav ul li:last-of-type {
+    
+}
+
+/************ Form rules ************/
+header form {
+    width: 250px;
+}
+
+#search-field {
+    padding: 10px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #ccc;
+}
+
+#search-button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #ccc;
+    background-color: #d8ba12;
+}
+
+/************ Top Section rules ************/
+#top {
+    background-color: #efefef;
+}
+
+#top ol {
+    background-color: #d3d3d3;
+    list-style-type: none;
+    width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+}
+
+#top ol li {
+    aspect-ratio: 1 / 1;
+    flex: 1;
+}
+
+#top ol li:nth-child(1), #top ol li:nth-child(3) { background-color: hotpink;}
+#top ol li:nth-child(2), #top ol li:nth-child(4) { background-color: #c31ef0;}
+
+#top ol li a {
+    text-align: center;
+    font-size:1.5em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/************ Keynote Section rules ************/
+#keynote {
+    background-color:#594c00;
+}
+
+#keynote .container {
+    background-color: #413803;
+    color: #fff;
+    padding: 0;
+}
+
+#keynote .container article {
+
+}
+
+#keynote .container article div {
+    padding: 20px;
+}
+#keynote article div p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+#keynote aside {
+    background: gold;
+    padding: 15px;
+    color:#434343;
+}
+
+/************ Schedule Section rules ************/
+#schedule {
+    background-color: #efefef;
+    border-bottom: 30px solid #d3d3d3;
+    padding: 20px;
+}
+
+#schedule .container{
+}
+
+#schedule .container div ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#schedule .container div ol li {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+/************ Info Section rules ************/
+#info {
+    padding: 20px;
+}
+
+#info .container {
+    
+}
+
+#info .container article {
+    text-align: justify;
+    hyphens: auto;
+}
+
+#page-footer {
+    border-top: 30px solid gold;
+    background-color:#594c00;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+

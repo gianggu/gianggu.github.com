@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.intro {
+    max-width: 800px;
+    margin: 2em auto;   
+}
+
+p {
+    margin: 0 0 1em 0;
+    line-height: 1.4em;
+}
+
+header, footer {
+    width: 1020px;
+    background-color: #cfc477;
+    margin: 0 auto 50px auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    width: 1020px;
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    background-color: #e5bfe7;
+    padding: 15px;
+    gap: 25px;
+    flex: 1;
+}
+
+article {
+    margin-bottom: 50px;
+   display: flex;
+    gap: 30px;
+}
+
+article div {
+    flex: 1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #934799;
+}
+
+figure {
+    margin: 0;
+    flex: 1;
+}
