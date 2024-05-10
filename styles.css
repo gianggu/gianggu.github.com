@@ -1,0 +1,10 @@
+body #front-page {
+    background-color: #F3CA40;
+    padding-top: 0;
+    margin: 0;
+}
+
+#special-header h1 {
+    margin: 0;
+    padding: 0;
+}
