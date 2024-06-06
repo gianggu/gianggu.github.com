@@ -1,3 +1,22 @@
+@font-face {
+    font-family: 'r-flexbold';
+    src: url('font/rflexbold-vgzlz-webfont.woff2') format('woff2'),
+         url('font/rflexbold-vgzlz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'r-flexbold_italic';
+    src: url('font/rflexbolditalic-algjm-webfont.woff2') format('woff2'),
+         url('font/rflexbolditalic-algjm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'r-flexbold_italic';
+}
 body #front-page {
     background-color: #F3CA40;
     padding-top: 0;
