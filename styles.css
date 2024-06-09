@@ -23,6 +23,16 @@ body #front-page {
     margin: 0;
 }
 
+.nav ul {
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color:black;
+}
+
 #special-header h1 {
     margin: 0;
     padding: 0;
