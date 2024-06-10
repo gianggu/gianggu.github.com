@@ -48,10 +48,9 @@ h3 {
 
 #yellow {
     background-color: #F3CA40;
-}
+    position: relative; /* Establishes a new positioning context */
+    min-height: 100vh; /* Ensures #yellow covers the full viewport height */
 
-#first-page {
-    margin: 0;
 }
 
 .nav ul {
@@ -71,7 +70,11 @@ h3 {
     color:black;
 }
 
-
+#eyeballs {
+    margin: 100px 400px 10px;
+    display: flex;
+    justify-content: space-around;
+}
 #eye_white_left {
     /* position: relative; */
     overflow: hidden;
@@ -80,8 +83,8 @@ h3 {
 #iris_left {
     position: absolute;
     z-index: 1;
-    top: 300px;
-    left: 0;
+    /* top: 300px;
+    left: 0; */
     width: 50px;
     height: 50px;
     transform: translate(-50%,-50%);
@@ -95,16 +98,17 @@ h3 {
 #iris_right {
     position: absolute;
     z-index: 1;
-    top: 300px;
-    left: 0;
+    /* top: 360px;
+    left: 0; */
     width: 50px;
     height: 50px;
     transform: translate(-50%,-50%);
 }
 
 #first_page {
+    margin: 0;
     display: flex;
-    padding: 250px 10px 300px;
+    padding: 0 10px 300px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -112,6 +116,7 @@ h3 {
 #special_header {
     flex: 1;
 }
+
 #special_header h1 {
     margin: 0;
     padding: 0;
