@@ -70,22 +70,70 @@ h3 {
     color:black;
 }
 
+/* Example googly eye reference */
+/* .eye {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    bottom: 41px;
+    background: #fff;
+    border-radius: 50%;
+    &-left {
+      left: 26px;
+    }
+    &-right {
+      right: 26px;
+    }
+  }
+
+  .eye {
+    &-inner {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: black;
+      border-radius: 50%;
+      margin-left: 4px;
+      margin-top: 4px;
+    }
+  }
+
+  .eye {
+    &-inner {
+      &:after {
+        position: absolute;
+        top: 2px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        content: ' ';
+      }
+    }
+  } */
+
+  /* Original googly eyes */
 #eyeballs {
     display: flex;
     justify-content: space-between;
-    width: 30%;
-    /* justify-content: space-around; */
+    width: 35%;
+    /* justify-content: space-around; this is commented */
     position: relative;
-    top: 25%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust positioning to truly center */
-    z-index: 10; /* Ensure eyeballs are above other elements */
-
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .eye {
-    /* flex: 1; */
-    /* padding: 0 50px; */
+    flex: 1;
+    padding: 0 50px;
     flex-basis: 170px;
     position: relative;
     height: auto;
@@ -101,8 +149,31 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
+
+/* #eyeballs {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.eye {
+    position: absolute;
+}
+
+#left_eye {
+    right: 70px;
+}
+
+#left_eye {
+    left: 70px;
+} */
 
 #first_page {
     margin: 0;
@@ -151,6 +222,10 @@ h3 {
     color: black;
 }
 
+#main_body {
+    margin: 50px 250px;
+}
+
 #mini_excerpt h3 {
     font-family: 'r-flexbold_italic';
     font-size: 30px; 
@@ -161,20 +236,21 @@ h3 {
     font-size: 80px; 
 }
 
-#main_body {
-    margin: 50px 250px;
-}
 #projects h1 {
     font-size: 70px;
 }
 
-/* 
-
-#contact-section {
-    background-imgage: url(images/mybackground.svg);
+.contact-section {
+    background-image: url(images/contact-bg.svg);
     background-repeat: no-repeat;
-    backgrond-position: center top;
+    background-position: center top;
     background-size: 100%;
     padding-top: 70px;
-    background-color: #F3CA40;
-*/
+    height: 90vh;
+    background-color: #619CF5;
+    
+    display: grid;
+    place-items: center;
+}
+
+
