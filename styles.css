@@ -122,7 +122,7 @@ h3 {
 #eyeballs {
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 60lvh;
     /* justify-content: space-around; this is commented */
     position: relative;
     top: 25%;
@@ -198,7 +198,7 @@ h3 {
     text-align: center;
 }
 
-#creative_des h2, nav, p {
+#creative_des h2, nav, p, a {
     font-family: 'r-flex_regularregular';
     font-size: 19px;
 }
@@ -223,7 +223,7 @@ h3 {
 }
 
 #main_body {
-    margin: 50px 250px;
+    margin: 50px 300px;
 }
 
 #mini_excerpt h3 {
@@ -236,21 +236,85 @@ h3 {
     font-size: 80px; 
 }
 
+.project-preview {
+    display: flex;
+    margin: 30px 0;
+    gap: 3rem;
+    width: 90%;
+    /* position: center; */
+}
 #projects h1 {
     font-size: 70px;
 }
 
+* {
+    box-sizing: border-box;
+}
 .contact-section {
     background-image: url(images/contact-bg.svg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
-    padding-top: 70px;
-    height: 90vh;
-    background-color: #619CF5;
-    
+    padding-top: 10rem;
+    height: 100vh;
+    /* background-color: #619CF5; */
+    /* background-image: linear-gradient (#619CF5, #c2f7f8); */
+}
+
+.contact-blue-container {
+    background-image: linear-gradient(#619CF5, #c2f7f8);
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
     display: grid;
     place-items: center;
 }
 
 
+.contact-heading {
+    font-family: 'r-flexbold', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    /* letter-spacing: .5rem; */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-input {
+    width: 28rem;
+    height: 3rem;
+    padding: .5rem;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 0.1rem solid #fff;
+    border-radius: 10px;
+    font-size: .8rem;
+    color: #000;
+}
+
+.contact-form-input:focus {
+    color: #1f1c5f;
+    border: 0.1rem solid #468afe;
+}
+
+.contact-form-input::placeholder {
+    color: #6b84ae;
+}
+.contact-form-textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.form-submit-btn {
+    width: 10rem;
+    height: 3rem;
+    background-color: #fff;
+    border: 0.1rem solid #aaa;
+    border-radius: 10px;
+}
